@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 export class App {
   name = 'Angular';
   cargo = 'Estudiante';
+  nombre = 'Kaar Joseph Mashingashi';
 
   numero1: number = 0;
   numero2: number = 0;
@@ -36,6 +37,12 @@ export class App {
     console.log('Hola UPS', this.numero1)
   this.contador = this.contador + 1
     this.resultado = this.numero1 * this.numero2; // Operación matemática
+  }
+
+  calcularD() {
+    console.log('Hola UPS', this.numero1)
+  this.contador = this.contador + 1
+    this.resultado = this.numero1 / this.numero2; // Operación matemática
   }
 }
   /*
