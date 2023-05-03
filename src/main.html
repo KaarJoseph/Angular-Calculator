@@ -1,0 +1,22 @@
+<h1>¡Hola {{name}}!</h1>
+<h2>{{cargo}}</h2>
+<a target="_blank" href="https://angular.io/start">
+  UPS
+</a>
+<br>
+
+<div>
+  <br>
+  <label for="numero1">A:  </label>
+  <input type="number" id="numero1" [(ngModel)]="numero1">
+  <br>
+  <label for="numero2">B:  </label>
+  <input type="number" id="numero2" [(ngModel)]="numero2">
+  <br><br>
+  <button (click)="calcular()">Calcular Suma {{contador}}</button>
+  <button (click)="calcularR()">Calcular resta {{contador}}</button>
+  <button (click)="calcularM()">Calcular multiplicación {{contador}}</button>
+  <br>
+  <p>Resultado: {{resultado}}</p>
+
+</div>
