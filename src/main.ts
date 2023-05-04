@@ -3,15 +3,18 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { MyComponentComponent } from './my-component/my-component.component';
+
 
 @Component({
   selector: 'my-app',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, MyComponentComponent],
   templateUrl: './main.html',
   styleUrls: ['./main.css']
 })
 export class App {
+
   name = 'Angular';
   cargo = 'Estudiante';
   nombre = 'Kaar Joseph Mashingashi';
